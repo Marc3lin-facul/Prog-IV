@@ -3,4 +3,50 @@ body{
     align-items: center;
     justify-content: center;
     background-color: green;
+    height: 100vh;
+}
+
+.login{
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.login img{
+    width: 50%;
+}
+
+.login button{
+    background-color: #32A041;
+    width: 400px;
+    padding: 10px;
+    border-radius: 5px;   
+}
+
+.usuario{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.usuario input{
+    width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.links a{
+    color: green;
+    text-decoration: none;
 }

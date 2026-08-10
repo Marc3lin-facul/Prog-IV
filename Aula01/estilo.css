@@ -17,13 +17,34 @@ body{
     padding: 10px;
 }
 
+.info{
+   background-color: #eaf7ec;
+   border: 1px solid #32A041;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 420px;
+   border-radius: 5px;
+   padding: 5px;
+
+}
+
+.info p{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.info strong{
+    color: green;
+}
+
 .login img{
     width: 50%;
 }
 
 .login button{
     background-color: #32A041;
-    width: 400px;
+    width: 423px;
     padding: 10px;
     border-radius: 5px;   
 }
@@ -38,11 +59,14 @@ body{
     width: 400px;
     padding: 10px;
     border-radius: 5px;
+    background-color: #f1f1f1;
 }
 
 .links{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 

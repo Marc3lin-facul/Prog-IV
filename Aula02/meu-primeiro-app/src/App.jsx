@@ -16,7 +16,7 @@ function App() {
       return
     }
     console.log("Dados enviados: ", {cpf, senha})
-    navigate('/dashboard')
+    navigate('/dashboard',{state: {userCPF : cpf , userSenha: senha}})
   }
   
 
@@ -42,7 +42,7 @@ function App() {
               onChange = {(e) => setSenha(e.target.value)}/>
           </div>
 
-          <button type="submit">Confirmar</button>
+          <button className='btn-login' type="submit">Confirmar</button>
           <div class = "links">
               <a href="#">Esqueci a senha</a>
               <a href="#">Esqueci o E-mail Cadastrado</a>

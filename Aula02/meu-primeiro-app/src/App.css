@@ -54,7 +54,7 @@ body {
     max-width: 150px; /* Evita que a imagem cresça demais */
 }
 
-.login button { 
+.login .btn-login { 
     background-color: #32A041; 
     width: 100%; /* Fluido */
     max-width: 423px; 

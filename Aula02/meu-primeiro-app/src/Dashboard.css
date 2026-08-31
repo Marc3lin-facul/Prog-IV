@@ -1,0 +1,85 @@
+body { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background-color: green; 
+    min-height: 100vh; /* Mudado de height para min-height */
+    margin: 0; /* Evita barras de rolagem indesejadas */
+    padding: 20px; /* Margem de segurança para telas pequenas */
+    box-sizing: border-box;
+}
+
+/* Garante que o box-sizing se aplique a tudo */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.login { 
+    background-color: white; 
+    border-radius: 5px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column; 
+    gap: 10px; 
+    padding: 20px; /* Aumentado para melhor respiro */
+    width: 100%; /* Ocupa o espaço disponível */
+    max-width: 460px; /* Limite máximo de largura em telas grandes */
+}
+
+.info { 
+    background-color: #eaf7ec; 
+    border: 1px solid #32A041; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: 100%; /* Fluido */
+    max-width: 420px; /* Mantém o tamanho original em telas grandes */
+    border-radius: 5px; 
+    padding: 10px; 
+}
+
+.info p { 
+    width: 100%; 
+    border-radius: 5px; 
+    margin: 0; /* Remove margens padrão do parágrafo */
+}
+
+.info strong { 
+    color: green; 
+}
+
+.login img { 
+    width: 50%; 
+    max-width: 150px; /* Evita que a imagem cresça demais */
+}
+
+.usuario { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
+    width: 100%; /* Garante que o container ocupe a largura da .login */
+    align-items: center;
+}
+
+.usuario input { 
+    width: 100%; /* Fluido */
+    max-width: 420px; /* Ajustado para alinhar com o botão/info */
+    padding: 12px; 
+    border-radius: 5px; 
+    background-color: #f1f1f1; 
+    border: 1px solid #ccc;
+}
+
+.links { 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+.links a { 
+    color: green; 
+    text-decoration: none; 
+}

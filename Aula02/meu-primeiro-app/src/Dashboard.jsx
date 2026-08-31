@@ -1,19 +1,30 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
+import {useEffect} from "react";
+import './Dashboard.css';
+import Header from "./Header.jsx"
 
 function Dashboard(){
-    const navigate = useNavigate()
-    const handleLogout = () => {
-        //Retorna de volta para a tela de login
-        navigate('/')
-    }
+    const navigate = useNavigate();
+    const location = useLocation(); //Enviar dados de maneira segura
+    const userCPF = location.state?.userCPF;
+    const senhaUsuario = location.state?.userSenha;
 
+    
+    useEffect(() =>{
+        if (!userCPF){
+            navigate('/')
+        }
+    }, [userCPF, navigate])
+
+    
     return(
-        <div>
-            <h1>Painel Principal {Dashboard}</h1>
-
-            <button onClick= {handleLogout}>
-                Sair / Voltar ao Login
-            </button>
+        <div className = "login">
+            <Header/>
+            <main>
+                <h1>Painel Principal (Dashboard)</h1>
+                <h2>Seja bem-vindo {userCPF}, conectou com a senha: {senhaUsuario}</h2>
+            </main>
+            <footer>marcelo.faculdade06@gmail.com (2026)</footer>
         </div>
     )
 }
